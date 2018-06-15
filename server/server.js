@@ -47,15 +47,6 @@ app.get('/todos/:id', (req, res) => {
   }).catch((e) => {
     res.status(400).send();
   });
-  // Valid id using isValid
-    // 404 - send back empty send()
-
-  // findById
-    // success
-      // if todo - send it back
-      // if no todo - send back 404 with empty body
-    // error
-      // 400 - and send empty body back
 });
 
 app.listen(3000, () => {
